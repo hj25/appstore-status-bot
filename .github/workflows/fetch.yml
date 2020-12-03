@@ -26,6 +26,7 @@ jobs:
           BUNDLE_ID: ${{ secrets.BUNDLE_ID }}
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
           LANGUAGE: "en"
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'  
       - name: push
         uses: github-actions-x/commit@v2.7
         with:
