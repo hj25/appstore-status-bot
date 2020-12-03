@@ -9,9 +9,6 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2.1.1
-        with:
-          node-version: "14.x"
       - uses: actions/setup-ruby@v1
         with:
           ruby-version: "2.6"
@@ -34,5 +31,5 @@ jobs:
           commit-message: 'Store Appstore Info'
           force-add: 'true'
           files: store.db
-          name: Fernando
-          email: techin.park@daum.net
+          name: hj
+          email: hee6542000@hanmail.net
